@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+body {
+  background: #faf7f2;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.film-list {
+  display: grid;
+  gap: 40px;
+  width: 600px;
+  max-width: 100%;
+}
+
+.film-item {
+  display: grid;
+  grid-template-columns: 3fr 9fr;
+  background: #fff;
+  color: #9b9385;
+  font-family: sans-serif;
+}
+
+.film-item__img img {
+  display: block;
+  width: 100%;
+}
+
+.film-item__left {
+  position: relative;
+  padding-left: 20px;
+}
+
+.film-item__genre {
+  position: absolute;
+  z-index: 2;
+  top: -10px;
+  right: -10px;
+  background: #fe9e0f;
+  box-sizing: border-box;
+  display: inline-block;
+  padding: 3px 6px;
+  line-height: 1;
+  font-size: 11px;
+  box-shadow: -1px 3px 7px #838383;
+  color: #fff;
+}
+
+.film-item__right {
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.film-item__img {
+  position: relative;
+  top: -20px;
+}
+
+.social-btns {
+  display: flex;
+  justify-content: end;
+  gap: 5px;
+}
+
+.social-btns .material-icons {
+  font-size: 18px;
+  color: #9b9385;
+}
+
+.film-item__name {
+  display: block;
+  text-align: left;
+  margin: 20px 0 40px;
+  color: #797979;
+  font-weight: 900;
+  font-size: 20px;
+}
+
+.card-body-stars {
+  display: flex;
+  gap: 5px;
+}
+
+.film-item__btns {
+  display: flex;
+  gap: 10px;
+}
+
+.film-item__btn {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 5px 12px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 10px;
+}
+
+.film-item__btn.buy {
+  color: #fff;
+  background: #797979;
+}
+
+.film-item__btn.more {
+  background: none;
+  color: #797979;
+}
